@@ -42,3 +42,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'ridgepole'
 gem 'faker'
+gem 'pry'
+gem 'grpc'
+gem 'grpc-tools'
