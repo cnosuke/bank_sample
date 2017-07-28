@@ -1,0 +1,18 @@
+create_table "users" do |t|
+  t.string "name", limit: 128, default: "", null: false
+  t.timestamps
+end
+
+create_table "wallets" do |t|
+  t.integer "user_id", limit: 4, null: false
+end
+
+create_table "payments" do |t|
+  t.integer "wallet_id", limit: 4, null: false
+  t.integer "amount", limit: 8, null: false, default: 0
+  t.string "target", limit: 128, null: false, default: ""
+  t.string "reason", limit: 128, null: false, default: ""
+end
+
+
+# 100.times { w.payments.build(amount: (rand(100000) - 50000), target: Faker::StarWars.character, reason: Faker::StarWars.wookie_sentence).save }
