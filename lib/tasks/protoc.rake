@@ -38,6 +38,6 @@ namespace :protoc do
     ].flatten.join(' ')
 
     puts cmd_str
-    # system(cmd_str) #FIXME
+    system(cmd_str)
   end
 end

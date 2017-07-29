@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :wallets
+  has_one :wallet
 end

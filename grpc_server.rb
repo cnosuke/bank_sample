@@ -1,5 +1,5 @@
 class GrpcServer
-  PORT = '0.0.0.0:11111'
+  PORT = '127.0.0.1:8080'
 
   def initialize
     @server = GRPC::RpcServer.new
