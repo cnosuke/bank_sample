@@ -13,6 +13,3 @@ create_table "payments" do |t|
   t.string "target", limit: 128, null: false, default: ""
   t.string "reason", limit: 128, null: false, default: ""
 end
-
-
-# 100.times { w.payments.build(amount: (rand(100000) - 50000), target: Faker::StarWars.character, reason: Faker::StarWars.wookie_sentence).save }
